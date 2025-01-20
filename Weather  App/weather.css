@@ -1,0 +1,180 @@
+/* STYLE HERE */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Splash Screen Styles */
+#splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(52, 152, 219, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    animation: backgroundChange 30s infinite; 
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url("https://media1.tenor.com/m/ITmo1jZWS2sAAAAd/snowfall-cold.gif");
+    }
+    10% {
+        background-image: url("/IMAGE/Slider-2.gif"); 
+    }
+    20% {
+        background-image: url("http://media.giphy.com/media/5vQYBeb9aZ5eM/giphy.gifhttp://media.giphy.com/media/5vQYBeb9aZ5eM/giphy.gif"); 
+    }
+    30% {
+        background-image: url("/IMAGE/Slider-1.gif");
+    }
+    40% {
+        background-image: url("http://i.kinja-img.com/gawker-media/image/upload/t_original/is9l7titozic2s3xpqjk.gif"); 
+    }
+    50% {
+        background-image: url("http://media3.giphy.com/media/PIh4laWJlz9bq/giphy.gif");
+    }
+    60% {
+        background-image: url("https://4.bp.blogspot.com/-TyhSpdg9AMQ/W9MkJITQmGI/AAAAAAAAGtQ/Bka0ZZdY0doGEejPbrpi5xO4sO8r4lk9gCLcBGAs/s1600/giphy%2B%25281%2529.gif");
+    }
+    70% {
+        background-image: url("https://media.tenor.com/images/5df100f0376f430ee018c047a78d7d35/tenor.gif");
+    }
+    80% {
+        background-image: url("https://i.pinimg.com/originals/b2/60/29/b2602932cb36bffa63c00f0f9e26e5b5.gif");
+    }
+    90% {
+        background-image: url("https://winkgo.com/wp-content/uploads/2016/11/22-Relaxing-GIFs-That-Are-Soothingly-Beautiful-22.gif");
+    }
+    100% {
+        background-image: url("https://media1.tenor.com/m/ITmo1jZWS2sAAAAd/snowfall-cold.gif");
+    }
+}
+
+.container {
+    background-color: rgba(52, 152, 219, 0.565);
+   border-bottom-right-radius: 50px;
+   border-bottom-left-radius: 50px;
+    border: 5px rgba(0, 81, 255, 0.568) solid;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 40px;
+    color: white;
+    flex-direction: row;
+}
+
+#search {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#checkWeather,
+#refreshWeather {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(52, 152, 219, 0.9);
+    color: white;
+    cursor: pointer;
+    border: 2px solid #1c6691;
+    transition: background-color 0.3s;
+}
+
+#checkWeather:hover,
+#refreshWeather:hover {
+    background-color: #1c6691;
+    transition: 2s ease-in-out;
+    box-shadow:   0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF6347;
+}
+
+/* Loading GIF style */
+#loading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#loading img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Date and Time Styles */
+#dateTime {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 78px;
+    padding-right: 83px;
+    background-color: #227eb4;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .row {
+        font-size: 30px;
+    }
+
+    #search {
+        font-size: 20px;
+        padding: 8px;
+    }
+    #dateTime {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #227eb4;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+    #checkWeather,
+    #refreshWeather {
+        font-size: 20px;
+    }
+}
+.img {
+    box-shadow:  0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF6347; 
+    border-radius: 100%;
+    background-color: #227eb4;
+}

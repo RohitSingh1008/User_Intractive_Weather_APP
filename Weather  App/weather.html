@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen">
+        <img src="IMAGE/App-logo.png" style="height: 150px;padding-left: 10px;padding-bottom: 10px;" alt="App-logo">
+        <h4 style="color: whitesmoke;font-family: sans-serif;">App Version : 1.0.8-RWP </h4>
+        <img src="IMAGE/loading.gif" style="height: 120px;width: 120px;" alt="Loading...">
+    </div>
+
+    <main>
+        
+        <img class="img" src="IMAGE/App-logo.png" style="height: 120px;padding-left: 10px;" alt="App-logo">
+
+        <h2 style="margin-bottom: 20px; font-size: 24px; text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF6347; color: #fff; padding-top: px;padding-bottom: 0;">Rohit's Weather App</h2>
+
+        
+<p id="dateTime"></p>
+        <div class="container">
+            <div class="row">
+                <input type="search" id="search" placeholder="Search by city name">
+            </div>
+            <div class="row">
+                <button id="checkWeather">Check Weather</button>
+                <button id="refreshWeather">Refresh</button>
+            </div>
+            <div id="loading">
+                <img src="IMAGE/loading.gif" alt="Loading...">
+            </div>
+            <div class="row" id="weather"></div>
+        </div>
+    </main>
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
